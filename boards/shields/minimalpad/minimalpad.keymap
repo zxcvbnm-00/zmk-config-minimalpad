@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define MEDIA 0
-#define BTLED 1
+#define NUMPAD 1
 
 / {
     sensors {
@@ -35,12 +35,11 @@
                 &mo 1     &kp LEFT       &kp C_MUTE    &kp RIGHT
                 &to 1     &kp LALT       &kp C_PREV    &kp C_PP       &kp C_NEXT
             >;
-            >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
 
-        numpd_layer {
+        numpad_layer {
             display-name = "NUMPAD";
             bindings = <
                 &mo 3     &kp KP_N7      &kp KP_N8     &kp KP_N9
